@@ -2,29 +2,29 @@ public class Main {
     public static void main(String[] args) {
 
         // Задание 1
-        int iint = 10000;
-        byte by= -120;
-        short sh = 30000;
-        long lo= 90000000L;
-        float fl = 3.1415f;
-        double doub= 6.2830d;
+        int integerValue = 10000;
+        byte byteNumber= -120;
+        short shortNumber = 30000;
+        long longNumber = 90000000L;
+        float floatNumber = 3.1415f;
+        double doubleNumber= 6.2830d;
 
-        System.out.println("Значение переменной iint c типом Int равно " + iint);
-        System.out.println("Значение переменной by c типом byte равно " + by);
-        System.out.println("Значение переменной sh c типом short равно " + sh);
-        System.out.println("Значение переменной lo c типом long равно " + lo);
-        System.out.println("Значение переменной fl c типом float равно " + fl);
-        System.out.println("Значение переменной doub c типом double равно " + doub);
+        System.out.println("Значение переменной integerValue c типом Int равно " + integerValue);
+        System.out.println("Значение переменной byteNumber c типом byte равно " + byteNumber);
+        System.out.println("Значение переменной shortNumber c типом short равно " + shortNumber);
+        System.out.println("Значение переменной longNumber c типом long равно " + longNumber);
+        System.out.println("Значение переменной floatNumber c типом float равно " + floatNumber);
+        System.out.println("Значение переменной doubleNumber c типом double равно " + doubleNumber);
 
 
         // Задание 2
-        double d = 27.12;
-        long l = 987678965549L;
-        float f = 2.786f;
-        short s = 569;
-        int i = -159;
-        int i1 = 27897;
-        byte c = 67;
+        double doubleValue = 27.12;
+        long longValue = 987678965549L;
+        float floatValue = 2.786f;
+        short shortValue = 569;
+        int intValue = -159;
+        int intNumber = 27897;
+        byte byteValue = 67;
 
         // Задание 3
         int lpStudent= 23;
@@ -37,11 +37,7 @@ public class Main {
 
         // Задание 4
         int perMin = 16/2;
-       // int perTwentyMin = perMin * 20;
-       // int perHour = perMin * 60;
-       // int perDay = perHour * 24;
-       // int perThreeDays = perDay * 3;
-       // int perMonth = perDay * 31;
+
 
         System.out.println("За 20 минут машина произвела " + (perMin * 20) + " штук бутылок ");
         System.out.println("За 24 часа машина произвела " + ((perMin * 60) * 24) + " штук бутылок ");
@@ -49,18 +45,11 @@ public class Main {
         System.out.println("За  месяц машина произвела " + ((((perMin * 60) * 24) * 3) * 31) + " штук бутылок ");
 
         // Задание 5
-        //int allClasses;
+
         int whiteColor = 2;
         int brownColor = 4;
         int allColorPaints = 120;
-        //int oneClassWhite;
-        //int oneClassBrowm;
-        // Сколько всего классов
-        //allClasses = allColorPaints / (whiteColor + brownColor); // 120 / (2+4) = 20 классов
 
-        //На одмн класс - 20*2 + 20*4
-        // oneClassWhite = allClasses * 2;
-        //oneClassBrowm = allClasses * 4;
         System.out.println("В школе, где " + (allColorPaints / (whiteColor + brownColor)) + " классов, нужно "
                 + ((allColorPaints / (whiteColor + brownColor)) * 2 +
                 " банок белой краски и " + ((allColorPaints / (whiteColor + brownColor)) * 4) + " банок коричневой краски"));
@@ -70,70 +59,41 @@ public class Main {
         int oneMilkW = 105;
         int oneIcecream = 100;
         int oneEgg = 70;
-       // float breackfast;
-       // float breackfastKg;
+        float breackfast;
+        float breackfastKg;
 
-      //  breackfast = (oneBananW * 5) + (oneMilkW * 2) + (oneIcecream * 2) + (oneEgg * 4);
-      //  breackfastKg = breackfast / 1000 ;
+        breackfast = (oneBananW * 5) + (oneMilkW * 2) + (oneIcecream * 2) + (oneEgg * 4);
+        breackfastKg = breackfast / 1000 ;
 
 
-        System.out.println("Вес завтрака в граммах: " + ((oneBananW * 5) + (oneMilkW * 2) + (oneIcecream * 2) + (oneEgg * 4))
-                + " грамм ");
-        System.out.println("Вес завтрака в килограммах: " + (((oneBananW * 5) + (oneMilkW * 2) + (oneIcecream * 2)
-                + (oneEgg * 4)) / 1000 ) + " килограмм");
+        System.out.println("Вес завтрака в граммах: " + breackfast + " грамм ");
+        System.out.println("Вес завтрака в килограммах: " + breackfastKg + " килограмм");
 
         // Задание 7
         int weightKg = 7;
         int gramm;
         int programma1 = 250;
         int programma2 = 500;
-/*        int days1;
-        int days2;
-        int days3;
-*/
+
         gramm = weightKg * 1000;
-/*
-        days1 = gramm / programma1;
-        days2 = gramm / programma2;
-        days3 = (days1 + days2) / 2;
-*/
+
 
         System.out.println("Потеря веса при программе '250гр за день' " + (gramm / programma1) + " дней ");
         System.out.println("Потеря веса при программе '500гр за день' " + (gramm / programma2) + " дней ");
         System.out.println("На потерю веса в среднем потребуется " + (((gramm / programma1) + (gramm / programma2)) / 2) + " дней ");
 
         // Задание 8
-        float masha = 67760;
-        float denis = 83690; //увеличить зп на 10%
-        float kristina = 76230; //увеличить зп на 10%
+        float mashaSalary = 67760;
+        float denisSalary = 83690;
+        float kristinaSalary = 76230;
 
-    /*    float yearMashaBefore;
-        float yearMashaAfter;
 
-        float yearDenisBefore;
-        float yearDenisAfter;
-
-        float yearKristinaBefore;
-        float yearKristinaAfter;
-
-       // yearMashaBefore = masha * 12;
-       // yearMashaAfter = (masha + masha * 0.1f) * 12;
-       // yearMashaAfter = masha * 12;
-
-        yearDenisBefore = denis * 12;
-        yearDenisAfter = (denis + denis * 0.1f) * 12;
-        //yearDenisAfter = denis * 12;
-
-        yearKristinaBefore = kristina * 12;
-        yearKristinaAfter =(kristina + kristina * 0.1f) * 12;
-        //yearKristinaAfter= kristina * 12;
-*/
-        System.out.println("Маша теперь получает: " + (masha + masha * 0.1f)  + " рублей в месяц. Годовой доход вырос на: "
-                + (((masha + masha * 0.1f) * 12) - (masha * 12)) + "руб.");
-        System.out.println("Денис теперь получает: " + (denis + denis * 0.1f) + " рублей в месяц. Годовой доход вырос на: "
-                + (((denis + denis * 0.1f) * 12) - (denis * 12)) + "руб.");
-        System.out.println("Кристина теперь получает: " + (kristina + kristina * 0.1f) + " рублей в месяц. Годовой доход вырос на: "
-                + (((kristina + kristina * 0.1f) * 12) - (kristina * 12)) + "руб.");
+        System.out.println("Маша теперь получает: " + (mashaSalary + mashaSalary * 0.1f)  + " рублей в месяц. Годовой доход вырос на: "
+                + (((mashaSalary + mashaSalary * 0.1f) * 12) - (mashaSalary * 12)) + "руб.");
+        System.out.println("Денис теперь получает: " + (denisSalary + denisSalary * 0.1f) + " рублей в месяц. Годовой доход вырос на: "
+                + (((denisSalary + denisSalary * 0.1f) * 12) - (denisSalary * 12)) + "руб.");
+        System.out.println("Кристина теперь получает: " + (kristinaSalary + kristinaSalary * 0.1f) + " рублей в месяц. Годовой доход вырос на: "
+                + (((kristinaSalary + kristinaSalary * 0.1f) * 12) - (kristinaSalary * 12)) + "руб.");
 
     }
 
